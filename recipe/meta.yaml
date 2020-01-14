@@ -1,13 +1,13 @@
 {% set name = "dagster_snowflake" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 754a2a8307dba77d8e76b3141b82c235b41794cf319057c23fbfe8b6b1c99626
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: 3dd0d19123be424a66386a46c5c89c9ca5ca4ebf2a1b24bf7ded3ad18f1b1950
 
 build:
   number: 0
